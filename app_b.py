@@ -11,8 +11,8 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import pickle
-from sklearn.preprocessing import MinMaxScaler
-from category_encoders import OneHotEncoder
+#from sklearn.preprocessing import MinMaxScaler
+#from category_encoders import OneHotEncoder
 
 # Load the trained model
 model = pickle.load(open('temp_model.pkl', 'rb'))
