@@ -16,7 +16,7 @@ import pickle
 
 # Load the trained model
 model = pickle.load(open('temp_model.pkl', 'rb'))
-bike_rental_model = pickle.load(open('bike_rental_model.pkl', 'rb'))
+#bike_rental_model = pickle.load(open('bike_rental_model.pkl', 'rb'))
 # Define the app
 def main():
     st.title("Bike Rental Prediction")
