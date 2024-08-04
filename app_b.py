@@ -16,7 +16,7 @@ from pathlib import Path
 #from category_encoders import OneHotEncoder
 
 # Load the trained model
-DATA_FILENAME = Path(__file__).parent/'temp_model.pkl'
+DATA_FILENAME = Path(__file__).parent/'data/temp_model.pkl'
 model = pickle.load(open(DATA_FILENAME, 'rb'))
 #bike_rental_model = pickle.load(open('bike_rental_model.pkl', 'rb'))
 # Define the app
