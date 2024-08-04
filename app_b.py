@@ -10,7 +10,7 @@ Created on Wed Jul 31 11:30:04 2024
 import streamlit as st
 import pandas as pd
 import numpy as np
-import pickle4 as pickle
+#import pickle4 as pickle
 from pathlib import Path
 #from sklearn.preprocessing import MinMaxScaler
 #from category_encoders import OneHotEncoder
@@ -19,7 +19,8 @@ from pathlib import Path
 def main():
     # Load the trained model
     DATA_FILENAME = Path(__file__).parent/'data/temp_model.pkl'
-    model = pickle.load(open(DATA_FILENAME, 'rb'))
+    #model = pickle.load(open(DATA_FILENAME, 'rb'))
+    model = pd.read_pickle('data/temp_model.pkl')
     #bike_rental_model = pickle.load(open('bike_rental_model.pkl', 'rb'))
     
     st.title("Bike Rental Prediction")
