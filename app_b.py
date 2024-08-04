@@ -20,7 +20,7 @@ def main():
     # Load the trained model
     DATA_FILENAME = Path(__file__).parent/'data/temp_model.pkl'
     #model = pickle.load(open(DATA_FILENAME, 'rb'))
-    model = pd.read_pickle('data/temp_model.pkl')
+    model = pd.read_pickle('temp_model.pkl')
     #bike_rental_model = pickle.load(open('bike_rental_model.pkl', 'rb'))
     
     st.title("Bike Rental Prediction")
