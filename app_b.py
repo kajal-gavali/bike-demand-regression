@@ -11,10 +11,12 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import pickle
+from pathlib import Path
 #from sklearn.preprocessing import MinMaxScaler
 #from category_encoders import OneHotEncoder
 
 # Load the trained model
+DATA_FILENAME = Path(__file__).parent/'temp_model.pkl'
 model = pickle.load(open('temp_model.pkl', 'rb'))
 #bike_rental_model = pickle.load(open('bike_rental_model.pkl', 'rb'))
 # Define the app
