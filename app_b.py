@@ -10,7 +10,7 @@ Created on Wed Jul 31 11:30:04 2024
 import streamlit as st
 import pandas as pd
 import numpy as np
-import pickle5 as pickle
+import pickle4 as pickle
 from pathlib import Path
 #from sklearn.preprocessing import MinMaxScaler
 #from category_encoders import OneHotEncoder
