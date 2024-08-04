@@ -15,12 +15,13 @@ from pathlib import Path
 #from sklearn.preprocessing import MinMaxScaler
 #from category_encoders import OneHotEncoder
 
-# Load the trained model
-DATA_FILENAME = Path(__file__).parent/'data/temp_model.pkl'
-model = pickle.load(open(DATA_FILENAME, 'rb'))
-#bike_rental_model = pickle.load(open('bike_rental_model.pkl', 'rb'))
 # Define the app
 def main():
+    # Load the trained model
+    DATA_FILENAME = Path(__file__).parent/'data/temp_model.pkl'
+    model = pickle.load(open(DATA_FILENAME, 'rb'))
+    #bike_rental_model = pickle.load(open('bike_rental_model.pkl', 'rb'))
+    
     st.title("Bike Rental Prediction")
 
     # Input features
