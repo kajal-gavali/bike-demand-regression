@@ -17,7 +17,7 @@ from pathlib import Path
 
 # Load the trained model
 DATA_FILENAME = Path(__file__).parent/'temp_model.pkl'
-model = pickle.load(open('temp_model.pkl', 'rb'))
+model = pickle.load(open('DATA_FILENAME', 'rb'))
 #bike_rental_model = pickle.load(open('bike_rental_model.pkl', 'rb'))
 # Define the app
 def main():
