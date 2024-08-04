@@ -1,5 +1,5 @@
 numpy
 pandas
-pickle5
+pickle4
 streamlit
 scikit-learn
